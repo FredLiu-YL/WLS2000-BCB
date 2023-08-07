@@ -34057,7 +34057,7 @@ object frnMain: TfrnMain
                 TabOrder = 7
               end
               object Panel82: TPanel
-                Left = 96
+                Left = 168
                 Top = 476
                 Width = 185
                 Height = 37
@@ -34130,8 +34130,8 @@ object frnMain: TfrnMain
                 TabOrder = 12
               end
               object Panel22: TPanel
-                Left = 96
-                Top = 404
+                Left = 152
+                Top = 412
                 Width = 185
                 Height = 37
                 BevelOuter = bvNone
@@ -34356,7 +34356,7 @@ object frnMain: TfrnMain
               end
               object pnlOperationTime: TPanel
                 Left = 344
-                Top = 176
+                Top = 152
                 Width = 137
                 Height = 33
                 BevelWidth = 2
@@ -34920,8 +34920,8 @@ object frnMain: TfrnMain
                 Color = clBlue
                 TabOrder = 28
                 object btnLocal: TLMDButton
-                  Left = 4
-                  Top = 6
+                  Left = -20
+                  Top = -10
                   Width = 97
                   Height = 30
                   Cursor = crHandPoint
