@@ -3838,6 +3838,7 @@ public:		// User declarations
       bool boolLPLight;
 
    };
+   
    struct ALARM_STRU    AlarmStatus;
    void __fastcall TfrnMain::InitAlarmStatus();
    void __fastcall TfrnMain::ForceToOriginal();

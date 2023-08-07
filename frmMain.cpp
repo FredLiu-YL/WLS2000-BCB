@@ -303,11 +303,13 @@ unsigned char AlignerStatus[15];
 unsigned char LoadPortLED[8];
 unsigned char Aligner2Status[15];
 
+
 // 2022 7 10 - chc LoadPort2
 bool boolMappingStatus2 = false;
 char CassetteBuffer2[25];
 unsigned char LoadPort2Status[20];
 unsigned char LoadPort2LED[8];
+
 
 // 2023 3 25 - chc SECS
 char WorkingBuffer[30];                                               // 各Wafer的Mapping Status
@@ -346,7 +348,7 @@ int32_t                 payloadSize;            // Size of an image frame in byt
 unsigned char*          imgBuf;                 // Buffer used for grabbing.
 //unsigned char*          imgBuf[3];            // Buffer used for grabbing.
 _Bool                   isAvail;
-//調色盤變數
+//調色盤變數  1
 #include <Graphics.hpp>
 bool mcolor;
 Graphics::TBitmap *pBitmap;
