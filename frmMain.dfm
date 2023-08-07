@@ -34104,7 +34104,7 @@ object frnMain: TfrnMain
                 TabOrder = 10
               end
               object pnlLoad: TPanel
-                Left = 764
+                Left = 812
                 Top = 41
                 Width = 21
                 Height = 113
@@ -34117,7 +34117,7 @@ object frnMain: TfrnMain
                 TabOrder = 11
               end
               object pnlToMeasurePoint: TPanel
-                Left = 764
+                Left = 812
                 Top = 257
                 Width = 21
                 Height = 113
