@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="WLS3200v.exe"/>
+    <OBJFILES value="WLS3200v.obj frmMain.obj Motion.obj LicenseCode.obj Joystick.obj 
+      AutoFocus.obj Socket.obj scA1300Thread.obj LogoFrm.obj RecipeForm.obj 
+      InspectionForm.obj SystemLogForm.obj CassetteIDForm.obj RecipeSetForm.obj"/>
+    <RESFILES value="WLS3200v.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) frmMain.dfm LogoFrm.dfm RecipeForm.dfm InspectionForm.dfm 
+      SystemLogForm.dfm CassetteIDForm.dfm RecipeSetForm.dfm"/>
+    <LIBFILES value="eVision670\BcB6\EasyBcB6.lib eVision670\BcB6\EImgBcB6.lib 
+      APSLib\APS168_bcb.lib iMatchDLL\iImage.lib iMatchDLL\iMatch.lib 
+      iMatchDLL\iVision.lib Pylon3.2\PylonC_MD_bcb6_100.lib"/>
+    <LIBRARIES value="yb_base_c6.lib yb_comm_c6.lib tee.lib dclusr.lib lmdcore8rt_60.lib 
+      lmdrtlx8rt_60.lib lmdrtl8rt_60.lib vclx.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib lmdrtl8rt_60.lib lmdrtlx8rt_60.lib 
+      lmdcore8rt_60.lib dclusr.lib tee.lib yb_comm_c6.lib yb_base_c6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi teedb.bpi 
+      tee.bpi vcldbx.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi lmdrtl8rt_60.bpi lmdrtlx8rt_60.bpi 
+      lmdcore8rt_60.bpi vclZipForgeb6.bpi yb_base_c6.bpi yb_comm_c6.bpi 
+      dclusr.bpi CrnGifImage.bpi Package1.bpi TMSUnicodeC6.bpi EhLibB60.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="WLS3200v.cpp"/>
+    <INCLUDEPATH value="D:\DX9BCB\DX9SDK\Include;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;&quot;J:\Program Files\Borland\CBuilder6\Bin&quot;;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL;Pylon3.2\include"/>
+    <LIBPATH value="D:\DX9BCB\DX9SDK\Lib;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;&quot;J:\Program Files\Borland\CBuilder6\Bin&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL;Pylon3.2"/>
+    <WARNINGS value="-w-rch -w-par -w-aus"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ID:\DX9BCB\DX9SDK\Include 
+      -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; -I$(BCB)\Imports 
+      -IAPSLib -IF:\LMD2007\lib\b6 -I&quot;J:\Program Files\Borland\CBuilder6\Bin&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -IeVision670\Include 
+      -IMulticam\Include -IVICTOR\VCL\BcB6 -IiMatchDLL -IPylon3.2\include 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -6 -b- -k -y -v -vi- 
+      -c -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="WLS3200v.res" FORMNAME="" UNITNAME="WLS3200v.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WLS3200v.cpp" FORMNAME="" UNITNAME="WLS3200v" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="frmMain.cpp" FORMNAME="frnMain" UNITNAME="frmMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="eVision670\BcB6\EasyBcB6.lib" FORMNAME="" UNITNAME="EasyBcB6.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="eVision670\BcB6\EImgBcB6.lib" FORMNAME="" UNITNAME="EImgBcB6.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Motion.cpp" FORMNAME="" UNITNAME="Motion" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="APSLib\APS168_bcb.lib" FORMNAME="" UNITNAME="APS168_bcb.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LicenseCode.cpp" FORMNAME="" UNITNAME="LicenseCode" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Joystick.cpp" FORMNAME="" UNITNAME="Joystick" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="iMatchDLL\iImage.lib" FORMNAME="" UNITNAME="iImage.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="iMatchDLL\iMatch.lib" FORMNAME="" UNITNAME="iMatch.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="iMatchDLL\iVision.lib" FORMNAME="" UNITNAME="iVision.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AutoFocus.cpp" FORMNAME="" UNITNAME="AutoFocus" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Socket.cpp" FORMNAME="" UNITNAME="Socket" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="scA1300Thread.cpp" FORMNAME="" UNITNAME="scA1300Thread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Pylon3.2\PylonC_MD_bcb6_100.lib" FORMNAME="" UNITNAME="PylonC_MD_bcb6_100.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LogoFrm.cpp" FORMNAME="frmLogo" UNITNAME="LogoFrm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RecipeForm.cpp" FORMNAME="frmRecipe" UNITNAME="RecipeForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="InspectionForm.cpp" FORMNAME="frmInspection" UNITNAME="InspectionForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SystemLogForm.cpp" FORMNAME="frmSystemLog" UNITNAME="SystemLogForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CassetteIDForm.cpp" FORMNAME="frmCassetteID" UNITNAME="CassetteIDForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RecipeSetForm.cpp" FORMNAME="frmRecipeSet" UNITNAME="RecipeSetForm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1028
+CodePage=950
+
+[Version Info Keys]
+CompanyName=Hanndeng Technology
+FileDescription=WLS3200
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=28
+Item0=D:\DX9BCB\DX9SDK\Include;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL;Pylon3.2\include
+Item1=D:\ICON\Red Tab\The Icons;..\Icon;D:\DX9BCB\DX9SDK\Include;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL;Pylon3.2\include
+Item2=D:\DX9BCB\DX9SDK\Include;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL;Pylon3.2\include
+Item3=..\..\..\珠光紙(南亞)\WayIPServer-2-10A-AI(BCB6);D:\DX9BCB\DX9SDK\Include;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL;Pylon3.2\include
+Item4=D:\DX9BCB\DX9SDK\Include;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL;Pylon2.3\include
+Item5=D:\DX9BCB\DX9SDK\Include;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL
+Item6=..\..\代操-台積電石英\WVSocketMouse-V10;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\DX9BCB\DX9SDK\Include;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL
+Item7=D:\DX9BCB\DX9SDK\Include;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;iMatchDLL
+Item8=D:\DX9BCB\DX9SDK\Include;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;APSLib;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6
+Item9=D:\DX9BCB\DX9SDK\Include;..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item10=..\..\..\PlayNitride\WVNitrideV11;PlayNitride\WVNitrideV11;D:\DX9BCB\DX9SDK\Include;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item11=PlayNitride\WVNitrideV11;D:\DX9BCB\DX9SDK\Include;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item12=..\..\..\PlayNitride\WVNitrideV11;D:\DX9BCB\DX9SDK\Include;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item13=D:\DX9BCB\DX9SDK\Include;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item14=..\..\..\PlayNitride\WVNitrideV11;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib;D:\DX9BCB\DX9SDK\Include
+Item15=$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib;D:\DX9BCB\DX9SDK\Include
+Item16=..\..\..\PlayNitride\WVNitrideV11;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib;D:\DX9BCB\DX9SDK\Include
+Item17=C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib;D:\DX9BCB\DX9SDK\Include
+Item18=..\..\..\PlayNitride\WVNitrideV11;C:\Program Files (x86)\Borland\CBuilder6\Projects;$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item19=$(BCB)\Imports;F:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item20=$(BCB)\Imports;D:\BcB-系統\LMD2007\lib\b6;C:\Program Files (x86)\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item21=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6;APSLib
+Item22=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6
+Item23=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;VICTOR\VCL\BcB6
+Item24=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include;F:\WindowsAP\PlayNitride\WVNitrideV10\VICTOR\VCL\BcB6
+Item25=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\include;$(BCB)\include\vcl;eVision670\Include;Multicam\Include
+Item26=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\include;$(BCB)\include\vcl
+Item27=J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=26
+Item0=D:\DX9BCB\DX9SDK\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL;Pylon3.2
+Item1=D:\ICON\Red Tab\The Icons;..\Icon;D:\DX9BCB\DX9SDK\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL;Pylon3.2
+Item2=D:\DX9BCB\DX9SDK\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL;Pylon3.2
+Item3=..\..\..\珠光紙(南亞)\WayIPServer-2-10A-AI(BCB6);D:\DX9BCB\DX9SDK\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL;Pylon3.2
+Item4=D:\DX9BCB\DX9SDK\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL;Pylon2.3
+Item5=D:\DX9BCB\DX9SDK\Lib;C:\Program Files (x86)\Borland\CBuilder6\Projects;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL
+Item6=..\..\代操-台積電石英\WVSocketMouse-V10;C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\DX9BCB\DX9SDK\Lib;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL
+Item7=D:\DX9BCB\DX9SDK\Lib;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;iMatchDLL
+Item8=D:\DX9BCB\DX9SDK\Lib;..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item9=..\..\..\PlayNitride\WVNitrideV11;D:\DX9BCB\DX9SDK\Lib;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;PlayNitride\WVNitrideV11
+Item10=..\..\..\PlayNitride\WVNitrideV11;D:\DX9BCB\DX9SDK\Lib;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item11=D:\DX9BCB\DX9SDK\Lib;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item12=..\..\..\PlayNitride\WVNitrideV11;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;D:\DX9BCB\DX9SDK\Lib
+Item13=VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib;D:\DX9BCB\DX9SDK\Lib
+Item14=..\..\..\PlayNitride\WVNitrideV11;C:\Program Files (x86)\Borland\CBuilder6\Projects;VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item15=VICTOR\VCL;$(BCB)\Imports;F:\\LMD2007\lib\b6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item16=VICTOR\VCL;$(BCB)\Imports;D:\BcB-系統\LMD2007\lib\b6;C:\Program Files (x86)\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item17=VICTOR\VCL;$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;APSLib
+Item18=VICTOR\VCL;$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib
+Item19=VICTOR\VCL;$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib
+Item20=..\..\BCB元件\VICTOR\VCL;$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;F:\WindowsAP\PlayNitride\WVNitrideV10\VICTOR\VCL\BcB6
+Item21=..\..\BCB元件\VICTOR\VCL;$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;F:\WindowsAP\BCB元件\VICTOR\VCL;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib;F:\WindowsAP\PlayNitride\WVNitrideV10\VICTOR\VCL\BcB6
+Item22=..\..\BCB元件\VICTOR\VCL;$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;F:\WindowsAP\BCB元件\VICTOR\VCL;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib
+Item23=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;F:\WindowsAP\BCB元件\VICTOR\VCL;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;eVision670\BcB6;Multicam\Lib
+Item24=$(BCB)\Imports;J:\LMD2007\lib\b6;J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;F:\WindowsAP\BCB元件\VICTOR\VCL;..\..\..\AidAim\ZipForge\Lib\C++ Builder 6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item25=J:\Program Files\AidAim\ZipForge\Lib\C++ Builder 6;J:\Program Files\Borland\CBuilder6\Bin;F:\WindowsAP\WVAITester;F:\WindowsAP\BCB元件\VICTOR\VCL;..\..\..\AidAim\ZipForge\Lib\C++ Builder 6;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
